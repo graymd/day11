@@ -1,0 +1,10 @@
+<h1>Change Note</h1>
+
+<%= form_for @note do |f| %>
+	<%= f.label :note_title %>
+	<%= f.text_field :note_title %>
+	<br>
+	<%= f.label :note_data %>
+	<%= f.text_field :note_data %>
+	<%= f.submit %>
+<% end %>
