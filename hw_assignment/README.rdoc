@@ -1,28 +1,10 @@
-== README
+First Rails server.  Project uses ruby v. 2.2.0 and rails 4.2.0.  Project is a crude example of a note recording system.  Inputs for the user include "Note Title" and "Note".  
+The index page shows all the notes saved to the database.  It also gives the option to review a single note, edit a note and delete the note.  In addition, the index page includes a link to create a "New Note".
+The New Note, edit note and delete note are self explanatory.  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Server is started by typing "rails server" or "rails s" from the command prompt at the root of the project.
 
-Things you may want to cover:
+The project contains two working controllers (home and notes) and one model (note).
 
-* Ruby version
+The Active Record database has been changed to mysql2.  This was completed by updating line 7 in the file "Gemfile", updating config/database.yml, running bundle install, running "rails generate migration 'migrate name'", rake db:create, rake db:migrate.  The database program utilized is called "Sequel Pro".
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
